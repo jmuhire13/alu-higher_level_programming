@@ -8,7 +8,8 @@ def pow(a, b):
         result = 1.0
         for _ in range(abs(b)):
             result /= a  # Use division for negative powers
-        return float(f"{result:.15e}")  # Format the result in scientific notation
+        formatted_result = f"{result:.15e}"  # Format the result
+        return float(formatted_result)  # Return formatted result
     else:
         result = 1
         for _ in range(b):
