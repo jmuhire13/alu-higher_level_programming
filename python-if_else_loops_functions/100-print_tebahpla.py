@@ -1,7 +1,3 @@
 #!/usr/bin/python3
-
-def print_tebahpla():
-    for i in range(26):
-        print(chr(122 - i + (i % 2) * 32), end='')
-
-print_tebahpla()
+for i in range(122, 96, -1):
+    print("{}".format(chr(i) if i % 2 == 0 else chr(i - 32)), end="")
